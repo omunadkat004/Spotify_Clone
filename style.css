@@ -22,3 +22,18 @@ list-style: none;
 display: flex;
 gap: 10px;
 }
+.bg-black
+{
+    background-color: black;
+    color: white;
+}
+
+.invert{
+     
+    filter: invert(1);
+}
+
+.bg-grey
+{
+    background-color: #1a1919;
+}

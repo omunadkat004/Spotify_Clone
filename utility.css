@@ -1,5 +1,5 @@
 .border {
-    border: 2px solid rgb(7, 250, 44);
+    border: 2px solid rgb(6, 6, 6);
     margin: 3px;
 }
 
@@ -13,4 +13,9 @@
 
 .items-centre {
     align-items: center;
+}
+
+.rounded
+{
+    border-radius: 7px;
 }
