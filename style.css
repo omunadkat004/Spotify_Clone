@@ -1,50 +1,42 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    
-    
 }
+
 body {
     background-color: rgb(216, 216, 216);
     color: rgb(0, 0, 0);
 }
 
-.left{
+.left {
     width: 25vw;
 }
 
-.right
-{
+.right {
     width: 75vw;
 }
 
 .home ul li {
-width: 20px;
-list-style: none;
-display: flex;
-padding: 7px;
-font:bold ;
-cursor: pointer;
+    width: 20px;
+    list-style: none;
+    display: flex;
+    padding: 7px;
+    font: bold;
+    cursor: pointer;
 }
 
-.bg-black
-{
+.bg-black {
     background-color: black;
     color: white;
 }
 
-.invert{
-     
+.invert {
     filter: invert(1);
-   
-  
 }
 
-.bg-grey
-{
+.bg-grey {
     background-color: #1a1919;
 }
 
@@ -52,28 +44,26 @@ cursor: pointer;
     padding: 5px;
 }
 
-.spotify
-{
+.spotify {
     padding-top: 7px;
     padding-left: 5px;
     cursor: pointer;
 }
 
-.logo{
+.logo {
     margin-right: 5px;
 }
 
-.heading 
-{
+.heading {
     list-style: none;
     display: flex;
     align-items: center;
-    padding: 7px;
+    padding: 12px;
+    margin-bottom: 3px;
     cursor: pointer;
-   
 }
 
-.heading > img{
+.heading > img {
     width: 20px;
     margin-right: 5px;
 }
@@ -88,22 +78,143 @@ cursor: pointer;
     }
 }
 
-.footer 
-{
+.footer {
     display: flex;
-    gap: 13px ;
+    gap: 13px;
     font-size: 10px;
     position: absolute;
     bottom: 0;
-    
+}
+.footer a:hover
+{
+    color: rgb(55, 209, 55);
 }
 
-.footer a{
+.footer a {
     color: gray;
 }
 
-.library
-{
+.library {
     min-height: 69vh;
-    position: relative;
+    position: relative; 
+    }
+
+    .create-playlist {
+        background-color: #3a3737;
+        width: 100%;
+        border-radius: 7px;
+        padding: 8px;
+        box-sizing: border-box;
+        height: 19vh;
+        font-family: "Poppins", sans-serif;
+        font-weight: 150;
+        font-style: normal;
+    }
+    
+    .create-podcast {
+        background-color: #3a3737;
+        width: 100%;
+        border-radius: 7px;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 150;
+        font-style: normal;
+        
+    }
+    
+    .Create-your-playlist, .Create-your-podcast {
+        padding: 7px;
+    }
+    
+    .text-playlist, .text-podcast {
+        font-size: 13px; 
+        margin-left: 10px;
+        margin-bottom: 6px;
+        font: bolder;
+    }
+    
+    .playlist-button, .podcast-button {
+        color: black;
+        background-color: white;
+        width: 10vw;
+        height: 23px;
+        justify-content: center;
+        border-radius: 7px;
+        margin-left: 9px;
+        cursor: pointer;
+        font-size: 14px;
+        font-style: bolder;
+        font-family: "Poppins", sans-serif;
+        font-weight: 150;
+        font-style: normal;
+        
+        
+    }
+ .podcast-button:hover
+    {
+        transform: scale(1.05);
+    }
+    .playlist-button:hover
+    {
+        transform: scale(1.05);
+    }
+
+
+.header
+{
+display: flex;
+justify-content: space-between;
+background-color: #3a3737
 }
+
+.header> * 
+{
+    padding: 20px;
+}
+
+.header button 
+{
+   padding: 5px;
+   
+}
+
+.nav {
+    cursor: pointer;
+}
+
+.spotifyPlaylist
+{
+    padding: 16px;
+}
+
+.spotifyPlaylist .card 
+{
+    width: 150px;
+    border-radius: 7px;
+    background-color: #1a1919
+}
+.card 
+{
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 5px;
+}
+
+
+.card img 
+{
+    object-fit: contain;
+    width: 100%;
+}
+.card img:hover
+{
+    transform: scale(1.05);
+}
+
+.card >*
+{
+    margin-top: 10px;
+}
+
+
