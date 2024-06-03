@@ -366,9 +366,45 @@ div::-webkit-scrollbar-thumb:hover {
     padding: 8px;
     display: flex;
     justify-content: center;
-    margin-left: -295px;
+    margin-left: -298px;
     
 }
-
-
-
+.songlist ul {
+    padding: 15px;
+  }
+  
+  .songlist ul li {
+    list-style: decimal;
+    display: flex;
+    gap: 34px;
+    cursor: pointer;
+    padding: 12px 0; /* Corrected padding to remove the comma */
+    border: 2px solid rgb(113, 102, 102);
+    margin: 10px ;
+    border-radius: 7px;
+    padding: 8px;
+    width: 100%;
+    margin-left: -10px;
+    font-size: 12px;
+  }
+  
+  .playnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .playnow span {
+    font-size: 12px;
+    width: 64px;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .info div {
+    font-size: 14px; /* Specify a font size, you can adjust it as needed */
+  }
+  
