@@ -7,7 +7,7 @@ async function getSongs() {
     let div = document.createElement("div");
     div.innerHTML = response;
     let as = div.getElementsByTagName("a");
-  
+
     let ganna = [];
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
@@ -25,18 +25,27 @@ async function main() {
 
     let songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0];
     for (const ganna of songs) {
-        songUL.innerHTML += `<li> ${ganna} </li>`;
+        songUL.innerHTML = songUL.innerHTML + `<li><img class="invert" src="assets/music.svg" alt="">
+        <div class="info">
+            <div> ${ganna}</div>
+
+        </div>
+        <div class="playnow">
+            <span>Play Now</span>
+            <img class="invert" height="37px" src="assets/play.svg" alt="">
+        </div>
+             </li>`;
     }
 
-    // get first song
-    var audio = new Audio(songs[0]);
-    audio.play();
+            // get first song
+            var audio = new Audio(songs[0]);
+            audio.play();
 
     audio.addEventListener("canplaythrough", (event) => {
-        /* the audio is now playable; play it if permissions allow */
-        let duration = audio.duration;
-        console.log(duration);
+                /* the audio is now playable; play it if permissions allow */
+                let duration = audio.duration;
+            console.log(duration);
     });
 }
 
-main();
+            main();
