@@ -19,6 +19,7 @@ body {
 
 .right {
     width: 75vw;
+    position: relative;
 }
 
 .home ul li {
@@ -86,7 +87,7 @@ body {
     gap: 13px;
     font-size: 10px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 
 .footer a:hover {
@@ -132,7 +133,19 @@ body {
     padding: 7px;
 }
 
-.text-playlist{
+.Create-your-podcast:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.Create-your-playlist:hover{
+
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.text-playlist {
     font-size: 13px;
     margin-left: 10px;
     margin-bottom: 6px;
@@ -140,12 +153,14 @@ body {
     padding: 3px;
     font-weight: 300;
 }
+
 .text-podcast {
     font-size: 13px;
     margin-left: 10px;
     margin-bottom: 6px;
     font: bolder;
     font-weight: 300;
+    max-width: 100%;
 }
 
 .playlist-button {
@@ -163,6 +178,7 @@ body {
     font-weight: 450;
     font-style: normal;
 }
+
 .podcast-button {
     color: black;
     background-color: white;
@@ -179,30 +195,52 @@ body {
     font-style: normal;
 
 
+
 }
 
 .podcast-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    background-color: #00FF00;
 }
 
 .playlist-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    background-color: #00FF00;
 }
 
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #3a3737
+    background-color: #000000
 }
 
 .header>* {
     padding: 20px;
 }
 
-.header button {
-    padding: 5px;
+.buttonsignup,
+.loginbutton {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 90px;
+    /* Adjust width as needed */
+    height: 30px;
+    /* Adjust height as needed */
+    border: none;
+    border-radius: 7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
 
+.buttonsignup:hover,
+.loginbutton:hover {
+    background-color: #00FF00;
+    /* Lighter shade on hover */
+    color: black;
+    cursor: pointer;
 }
 
 .nav {
@@ -212,15 +250,16 @@ body {
 .spotifyPlaylist {
     padding: 16px;
 }
-.spotifyPlaylist > h1
-{
-     
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        font-size: x-large;
-      
+
+.spotifyPlaylist>h1 {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+
 }
+
 .spotifyPlaylist .card {
     width: 150px;
     border-radius: 7px;
@@ -230,6 +269,11 @@ body {
 .card {
     margin-top: 5px;
     position: relative;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    cursor: pointer;
 }
 
 
@@ -244,42 +288,44 @@ body {
     margin-top: 10px;
 }
 
-.cardcontainer 
-{
+.cardcontainer {
     display: flex;
     margin: 10px;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.play 
-{
-   position: absolute;
-   right: 6px;
-   margin-top: 128px;
+.play {
+    position: absolute;
+    right: 6px;
+    margin-top: 128px;
 
 }
 
 /* Apply to the entire document */
 body::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
+    /* Width of the scrollbar */
 }
 
 /* Track */
 body::-webkit-scrollbar-track {
-    background: #1a1a1a; /* Background of the scrollbar track */
+    background: #1a1a1a;
+    /* Background of the scrollbar track */
     border-radius: 10px;
 }
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-    background: #444; /* Color of the scrollbar handle */
+    background: #444;
+    /* Color of the scrollbar handle */
     border-radius: 10px;
 }
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the scrollbar handle when hovered */
+    background: #555;
+    /* Color of the scrollbar handle when hovered */
 }
 
 /* Apply to other scrollable elements */
@@ -300,3 +346,28 @@ div::-webkit-scrollbar-thumb {
 div::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+.buttonsignup,
+.loginbutton {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.playbar 
+{
+    position: absolute;
+    bottom: 0;
+    background-color: #000000;
+    width: 98%;
+    height: 45px;
+    position: fixed;
+    padding: 8px;
+    display: flex;
+    justify-content:50px;
+    gap: 13px
+    ;
+}
+
+
+
