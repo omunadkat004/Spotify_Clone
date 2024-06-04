@@ -89,7 +89,7 @@ body {
     font-size: 10px;
     position: absolute;
     bottom: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .footer a:hover {
@@ -369,6 +369,13 @@ div::-webkit-scrollbar-thumb:hover {
     justify-content: center;
     margin-left: -298px;
     
+   
+}
+
+.songlist{
+   overflow-x:scroll; 
+   height: 400px;
+   width: 105%;
 }
 .songlist ul {
     padding: 15px;
@@ -383,13 +390,13 @@ div::-webkit-scrollbar-thumb:hover {
     gap: 34px;
     cursor: pointer;
     padding: 20px; /* Corrected padding to remove the comma */
-    border: 2px solid rgb(113, 102, 102);
+    border: 1.5px solid rgb(113, 102, 102);
     margin: 10px;
     border-radius: 7px;
-    padding: 8px;
+    padding: 14px;
     width: 105%;
     height:25px;
-    margin-left: -15px;
+    margin-left: -19px;
    
 }
 
